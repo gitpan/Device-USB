@@ -14,7 +14,7 @@ use Inline (
         ),
         ($ENV{LIBUSB_INCDIR} ? ( INC => "-I\"$ENV{LIBUSB_INCDIR}\"" ) : () ),
         NAME => 'Device::USB',
-        VERSION => '0.35',
+        VERSION => '0.36',
    );
 
 Inline->init();
@@ -39,17 +39,19 @@ use constant CLASS_HUB =>     9;
 use constant CLASS_DATA =>   10;
 use constant CLASS_VENDOR_SPEC => 0xff;
 
+=encoding utf8
+
 =head1 NAME
 
 Device::USB - Use libusb to access USB devices.
 
 =head1 VERSION
 
-Version 0.35
+Version 0.36
 
 =cut
 
-our $VERSION=0.35;
+our $VERSION=0.36;
 
 
 =head1 SYNOPSIS
@@ -461,7 +463,7 @@ that is the entire reason for the module's existence.
 
 =head1 AUTHOR
 
-G. Wade Johnson (wade at anomaly dot org)
+G. Wade Johnson (gwadej at cpan dot org)
 Paul Archer (paul at paularcher dot org)
 
 Houston Perl Mongers Group
@@ -516,7 +518,7 @@ interrupt_read.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2006-2009 Houston Perl Mongers
+Copyright 2006-2013 Houston Perl Mongers
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
